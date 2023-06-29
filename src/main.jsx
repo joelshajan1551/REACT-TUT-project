@@ -7,24 +7,29 @@ const books = [
     author: "James clear",
     title: " Atomic Habits",
     img: "https://images-eu.ssl-images-amazon.com/images/I/91bYsX41DVL._AC_UL600_SR600,400_.jpg",
+    id:1,
   },
 
   {
     author: " Morgan Housel ",
     title: "The Psychology of Money",
     img: "https://m.media-amazon.com/images/I/71g2ednj0JL._AC_UY218_.jpg",
+    id: 1,
   },
 ];
 
-const names = ["john", "peter", "suso"];
-const newNames = names.map((name)=>{
-  return <h1>{names}</h1>;
-  
-});
-console.log(newNames);
+
 
 const Booklist = () => {
-  return <section className="booklist">{names}</section>;
+  return (
+     <section className="booklist">
+    {books.map((book) => {
+      const {img,title,author,id} = book
+      return <Book img={img} title={title} author={author} key={id}/>;
+      
+    })}
+  </section>
+    );
 };
 const Book = (props) => {
   const { author, title, img } = props;
