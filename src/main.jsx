@@ -14,7 +14,7 @@ const books = [
     author: " Morgan Housel ",
     title: "The Psychology of Money",
     img: "https://m.media-amazon.com/images/I/71g2ednj0JL._AC_UY218_.jpg",
-    id: 1,
+    id: 2,
   },
 ];
 
@@ -25,7 +25,10 @@ const Booklist = () => {
      <section className="booklist">
     {books.map((book) => {
       const {img,title,author,id} = book
-      return <Book img={img} title={title} author={author} key={id}/>;
+      return <Book book={book} 
+      key={book.id}/>;
+         
+
       
     })}
   </section>
