@@ -18,7 +18,7 @@ const books = [
   },
 ];
 
-const Booklist = () => {  
+const Booklist = () => {
   return (
     <section className="booklist">
       {books.map((book) => {
@@ -27,6 +27,11 @@ const Booklist = () => {
     </section>
   );
 };
+
+const EventExample = () => {
+  return <h1>events</h1>;
+};
+
 const Book = (props) => {
   const { author, title, img } = props;
 
