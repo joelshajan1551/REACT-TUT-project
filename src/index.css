@@ -17,7 +17,7 @@ body {
   gap: 2rem;
   align-items: start;
   text-align: center;
-}
+} 
 
 @media screen and (min-width: 768px) {
   .booklist {
