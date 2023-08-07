@@ -15,7 +15,7 @@ body {
   margin: 5rem auto;
   display: grid;
   gap: 2rem;
-  align-items: start;
+  align-items: start; 
   text-align: center;
 } 
 
