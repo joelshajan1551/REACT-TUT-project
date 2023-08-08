@@ -48,8 +48,10 @@ const EventExamples = () => {
       <form onSubmit={handleFormSubmission}>
         <h2>typical form</h2>
         <input type="text" name="product" onChange={handleFormInput} />
+        <button onClick={handlebuttonclick} type="submit">
+          click me
+        </button>
       </form>
-      <button onClick={handlebuttonclick}>click me</button>
     </section>
   );
 };
